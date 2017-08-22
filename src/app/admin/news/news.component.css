@@ -1,0 +1,29 @@
+/*Заменяем кнопку "Выберите файл" на кастомный вариант*/
+.input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.input + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #eac1e4;
+    background-color: #7b356d;
+    display: inline-block;
+    cursor: pointer; /* "hand" cursor */
+}
+
+/*при навигации по сайту с помощью клавиш*/
+.input:focus + label {
+	outline: 1px dotted #7b356d;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.input:focus + label,
+.input + label:hover {
+    background-color: #b176b1;
+}

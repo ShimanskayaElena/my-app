@@ -1,0 +1,7 @@
+<div *ngIf="news">
+  <h3>{{news.heading}}</h3>
+  <img *ngIf="news.src" [src]="'assets/images/' + news.src" class="img-rounded min-thumb">
+  <p>{{news.body}}</p>
+</div>
+<div class="clearfix"></div> 
+<button class="btn" (click)="back()">Back to news list</button>

@@ -1,0 +1,39 @@
+h2 {
+  text-align: center;
+  margin:  3% 10%;
+}
+
+div {
+    padding: 5px 5%;
+}
+
+li {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.selected {
+    color: #eac1e4;
+    font-size: 16px;
+    background-color: #efebe8;
+}
+
+li.selected:hover {
+    color: #eac1e4;
+}
+
+/*li:link {
+
+}*/
+
+/*li:visited {
+    
+}*/
+
+li:hover {
+    color: #b176b1;
+}
+
+/*li:active {
+    
+}*/

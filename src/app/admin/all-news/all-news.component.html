@@ -1,0 +1,29 @@
+<div>
+    <ul>
+        <li *ngFor="let news of pagedItems"  class="well well-small">
+            {{news.heading}}
+            <button class="btn btn-right" (click)="deleteNews(news); $event.stopPropagation()">Delete</button>
+            <button class="btn btn-right" (click)="editNews(news)">Edit</button>
+        </li>
+        <button (click)="addNews()" class="btn">Add News</button>
+    </ul>
+
+    <!-- pager -->
+            <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+                <li [ngClass]="{disabled:pager.currentPage === 1}">
+                    <a (click)="setPage(1)">First</a>
+                </li>
+                <li [ngClass]="{disabled:pager.currentPage === 1}">
+                    <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+                </li>
+                <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+                    <a (click)="setPage(page)">{{page}}</a>
+                </li>
+                <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                    <a (click)="setPage(pager.currentPage + 1)">Next</a>
+                </li>
+                <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                    <a (click)="setPage(pager.totalPages)">Last</a>
+                </li>
+            </ul>
+</div>

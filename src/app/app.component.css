@@ -1,0 +1,29 @@
+.hide {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+a:link {
+    color: #eac1e4;
+}
+
+a:visited {
+    color: #eac1e4;
+}
+
+a:hover {
+    color: #b176b1;
+}
+
+a.active {
+    color: #7b356d;
+}
+
+nav {
+    margin-left: 7%;
+}
