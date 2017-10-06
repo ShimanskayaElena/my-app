@@ -1,3 +1,5 @@
+The demo version of this application can be seen from the link - https://shimanskayaelena.github.io/my-app/home
+
 To run the application, you must run it on the command line
 
 ng serve --open
