@@ -1,7 +1,16 @@
+.about {
+  margin: 4% 8%;
+}
+
+h3 {
+  margin: 3% 0;
+  text-align: center;
+}
+
 .min-thumb {
   max-width: 50%;
   float: left;
-  padding-right: 10px;
+  padding-right: 45px;
 }
 
 .clearfix {

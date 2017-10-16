@@ -9,7 +9,6 @@ import { News} from '../home/news.model';
 
 @Component({
   moduleId: module.id,
-  selector: 'new-news',
   templateUrl: 'about.component.html',
   styleUrls: ['about.component.css']
 })

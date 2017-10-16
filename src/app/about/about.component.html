@@ -1,7 +1,7 @@
-<div *ngIf="news">
+<div *ngIf="news" class="about">
   <h3>{{news.heading}}</h3>
-  <img *ngIf="news.src" [src]="'assets/images/' + news.src" class="img-rounded min-thumb">
+  <img *ngIf="news.src" [src]="'assets/images/' + news.src" class="min-thumb"> <!--img-rounded -->
   <p>{{news.body}}</p>
+  <div class="clearfix"></div>
+  <button class="btn" (click)="back()">Back to news list</button>
 </div>
-<div class="clearfix"></div> 
-<button class="btn" (click)="back()">Back to news list</button>
